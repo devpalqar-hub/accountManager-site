@@ -216,7 +216,6 @@ export default function CreateEmployeePage() {
                 />
                 <p className="text-xs text-gray-500 mt-1">Used for leave calculations</p>
               </div>
-              </div>
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
