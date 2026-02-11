@@ -250,3 +250,20 @@ export interface TransactionLog {
   projectTitle?: string;
   createdAt: string;
 }
+
+export interface TransactionLog {
+  id: string;
+  transactionType: 'CREDIT' | 'DEBIT';
+  amount: number;
+  accountId: string;
+  accountName: string;
+  performedBy: string;
+  performedByEmail: string;
+  action: string;
+  description?: string;
+  referenceId?: string;
+  referenceType?: string;
+  projectId?: string;
+  projectTitle?: string;
+  createdAt: string;
+}
