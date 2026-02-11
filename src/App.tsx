@@ -27,6 +27,7 @@ import EditEmployeePage from '@/pages/employees/EditEmployeePage';
 import EmployeeDetailPage from '@/pages/employees/EmployeeDetailPage';
 import LeaveManagementPage from '@/pages/employees/LeaveManagementPage';
 import SalaryProcessingPage from '@/pages/employees/SalaryProcessingPage';
+import TransactionLogsPage from '@/pages/transaction-logs/TransactionLogsPage';
 import { AnalyticsPage } from '@/pages/analytics/AnalyticsPage';
 
 function App() {
@@ -69,6 +70,8 @@ function App() {
               <Route path="/employees/salary" element={<SalaryProcessingPage />} />
               
               <Route path="/users" element={<UsersPage />} />
+              
+              <Route path="/transaction-logs" element={<TransactionLogsPage />} />
               
               <Route path="/analytics" element={<AnalyticsPage />} />
             </Route>

@@ -262,3 +262,23 @@ export const salaryApi = {
   update: (id: string, data: Partial<SalaryRecord>) => 
     apiClient.patch<SalaryRecord>(`/employees/salary/records/${id}`, data),
 };
+
+// ==================== TRANSACTION LOG APIs ====================
+export const transactionLogApi = {
+  getAll: (filters?: {
+    transactionType?: 'CREDIT' | 'DEBIT';
+    accountId?: string;
+    performedBy?: string;
+    action?: string;
+    projectId?: string;
+    startDate?: string;
+    endDate?: string;
+  }) => 
+    apiClient.get('/transaction-logs', { params: filters }),
+  
+  getStats: () => 
+    apiClient.get('/transaction-logs/stats'),
+  
+  getById: (id: string) => 
+    apiClient.get(`/transaction-logs/${id}`),
+};

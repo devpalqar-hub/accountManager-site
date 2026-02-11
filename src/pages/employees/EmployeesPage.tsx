@@ -52,7 +52,7 @@ export default function EmployeesPage() {
   const inactiveEmployees = employees.filter((emp) => !emp.isActive).length;
   const totalSalaryExpense = employees
     .filter((emp) => emp.isActive)
-    .reduce((sum, emp) => sum + Number(emp.dailySalary || 0) * 26, 0); // Approximate monthly
+    .reduce((sum, emp) => sum + Number(emp.monthlySalary || 0), 0);
 
   const getWorkingDaysLabel = (workingDays: string) => {
     const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];

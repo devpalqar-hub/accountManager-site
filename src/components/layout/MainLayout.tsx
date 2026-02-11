@@ -14,6 +14,7 @@ import {
   BarChart3,
   LogOut,
   ChevronRight,
+  FileText,
 } from 'lucide-react';
 import { useAuthStore } from '@/store/authStore';
 import { toast } from 'react-hot-toast';
@@ -26,6 +27,7 @@ const menuItems = [
   { icon: TrendingDown, label: 'Expenses', path: '/expenses' },
   { icon: Package, label: 'Work Packages', path: '/work-packages' },
   { icon: UserCheck, label: 'Employees', path: '/employees' },
+  { icon: FileText, label: 'Transaction Logs', path: '/transaction-logs' },
   { icon: Users, label: 'Users', path: '/users' },
   { icon: BarChart3, label: 'Analytics', path: '/analytics' },
 ];
