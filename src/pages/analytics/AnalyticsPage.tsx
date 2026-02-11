@@ -118,7 +118,7 @@ export const AnalyticsPage: React.FC = () => {
                     outerRadius={80}
                     label
                   >
-                    {projectAnalytics.byStatus.map((entry: any, index: number) => (
+                    {projectAnalytics.byStatus.map((_entry: any, index: number) => (
                       <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                     ))}
                   </Pie>
